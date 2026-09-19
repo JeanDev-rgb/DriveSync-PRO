@@ -269,24 +269,12 @@ DRIVESYNC PRO.exe
 
 ---
 
-## 🎁 Licencia Lifetime
-
-La licencia comercial de DriveSync PRO incluye:
-
-- ♾️ **Licencia Lifetime** (1 dispositivo).
-- 🔐 Activación vinculada mediante HWID.
-- 🚀 Acceso a las funciones premium correspondientes a la licencia.
-
-Para adquirir una licencia o solicitar activación, utiliza los canales oficiales de contacto.
-
----
-
 ## 📋 Requisitos
 
 Para utilizar DriveSync PRO necesitas:
 
 - Windows x64.
-- Dive para escritorio: [Descarga aquí](https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe)
+- Drive para escritorio: [Descarga aquí](https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe)
 - Conexión a Internet.
 - Una cuenta de Google Drive con acceso al contenido que deseas gestionar.
 - Una licencia válida para las funciones protegidas.
@@ -349,7 +337,6 @@ Porque DriveSync PRO utiliza varios componentes y una distribución por carpeta 
 | Interfaz | **TUI** |
 | Activación | **HWID** |
 | Licencia | **Lifetime** |
-| Bonus | **+5,000 AI Reels** |
 
 ---
 

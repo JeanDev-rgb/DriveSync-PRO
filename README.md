@@ -97,7 +97,7 @@ El proceso de sincronización está organizado en pasos claros:
 Desde el menú principal se inicia una nueva sincronización.
 
 ```text
-DRIVESYNC PRO · v4.3 · LISTO
+DRIVESYNC PRO · v4.3.1 · LISTO
 
 Inicio
 
@@ -235,16 +235,16 @@ Esta distribución permite mantener separados los componentes de la aplicación 
 
 ---
 
-## 📥 Descargar DriveSync PRO v4.3
+## 📥 Descargar DriveSync PRO v4.3.1
 
 ### Versión estable
 
-**DriveSync PRO v4.3 — Stable Release**
+**DriveSync PRO v4.3.1 — Stable Release**
 
 Archivo para Windows x64:
 
 ```text
-DriveSync-PRO-v4.3.0-Windows-x64.zip
+DriveSync-PRO-v4.3.1-Windows-x64.zip
 ```
 
 La descarga oficial se encuentra en la sección **Releases** de este repositorio.
@@ -330,7 +330,7 @@ Porque DriveSync PRO utiliza varios componentes y una distribución por carpeta 
 | Información | Detalle |
 |---|---|
 | Producto | **DriveSync PRO** |
-| Versión | **4.3** |
+| Versión | **4.3.1** |
 | Estado | **Stable** |
 | Plataforma | **Windows x64** |
 | Distribución | **ZIP** |
@@ -363,7 +363,7 @@ Desarrollado bajo **Streamify+**.
 
 ---
 
-## ⭐ DriveSync PRO v4.3
+## ⭐ DriveSync PRO v4.3.1
 
 **Manage. Transfer. Sync.**
 

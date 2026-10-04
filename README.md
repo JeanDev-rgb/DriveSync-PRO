@@ -214,8 +214,23 @@ La distribución oficial de `v2026.1` está preparada para:
 
 - 🪟 **Windows x64**
 - 🐍 **Python**
-- 🌐 Equipos con conexión a Internet cuando se utilizan funciones que requieren servicios en línea.
-- ☁️ Acceso a las cuentas de Google Drive correspondientes.
+- ☁️ **Google Drive para escritorio — obligatorio**
+- 🌐 Conexión a Internet.
+- 🔐 Una cuenta de Google Drive con acceso al contenido que deseas gestionar.
+
+### 💾 Google Drive para escritorio
+
+> ⚠️ **Google Drive para escritorio es un requisito obligatorio para utilizar las funciones de DriveSync PRO relacionadas con Google Drive.**
+
+Descarga e instala la versión oficial de Google Drive para escritorio antes de ejecutar DriveSync PRO:
+
+[![Google Drive](https://img.shields.io/badge/Google%20Drive%20para%20escritorio-Descargar-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe)
+
+**Descarga oficial:**
+
+https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe
+
+DriveSync PRO utiliza las unidades y cuentas disponibles a través de Google Drive para escritorio para realizar las operaciones correspondientes.
 
 ### 📦 Distribución
 

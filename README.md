@@ -1,424 +1,240 @@
-# 🚀 DriveSync PRO
+# 🚀 DriveSync PRO v2026.2
 
-> **Gestión, procesamiento y optimización masiva de contenido en Google Drive y entornos locales.**
+> **Motor de Extracción Concurrente · Arquitectura Cloud Distribuida · Núcleo Binario Optimizado · Lanzador Nativo**
 
 <p align="center">
-  <a href="https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.1">
+  <a href="https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.2">
     <img src="https://img.shields.io/github/v/release/JeanDev-rgb/DriveSync-PRO?display_name=tag&style=for-the-badge&logo=github&label=Release" alt="Latest Release">
   </a>
-  <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/Windows-x64-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64">
-  <img src="https://img.shields.io/badge/FFmpeg-Automatic-007808?style=for-the-badge&logo=ffmpeg&logoColor=white" alt="FFmpeg">
-  <img src="https://img.shields.io/badge/Google%20Drive-Supported-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" alt="Google Drive">
+  <img src="https://img.shields.io/badge/Native%20Core-Optimized-6f42c1?style=for-the-badge&logo=windows-terminal&logoColor=white" alt="Native Core">
+  <img src="https://img.shields.io/badge/Google%20Drive-Required%20for%20Drive%20features-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" alt="Google Drive">
 </p>
 
 <p align="center">
-  <strong>DriveSync PRO v2026.1</strong><br>
-  Nueva arquitectura · ECC V3 · Procesamiento local · Anti-Duplicados · Auto-actualizador
+  <strong>DriveSync PRO v2026.2</strong><br>
+  Extracción masiva · Licencias Cloud · Reactivación Zero-Prompt · Núcleo nativo · Lanzador optimizado
 </p>
 
 ---
 
 ## ✨ ¿Qué es DriveSync PRO?
 
-**DriveSync PRO** es una plataforma orientada a la **gestión, clonación masiva, procesamiento y optimización de contenido** desde Google Drive y directorios locales.
+**DriveSync PRO** es una plataforma para la gestión, sincronización, clonación y procesamiento de contenido, con herramientas de automatización para flujos de trabajo locales y multimedia.
 
-La versión **v2026.1** introduce una nueva arquitectura interna, un flujo independiente de **procesamiento local**, un sistema **Anti-Duplicados**, seguridad criptográfica **ECC V3**, instalación automática de **FFmpeg**, una TUI multifase y un comprobador integrado de actualizaciones mediante GitHub Releases.
+La versión **v2026.2** incorpora un motor de extracción masiva con procesamiento concurrente, administración de licencias conectada a infraestructura cloud, reactivación transparente **Zero-Prompt**, componentes binarios nativos y un nuevo lanzador ejecutable. También conserva las funciones de procesamiento local y el modo Anti-Duplicados introducidos en versiones anteriores.
 
 > **Desarrollado por JeanDev bajo Streamify+.**
 
 ---
 
-## 🆕 Novedades de v2026.1
+## 🆕 Novedades de v2026.2
 
-### 🎬 Modo Anti-Duplicados
+### ⚡ Motor de Extracción y Procesamiento Masivo
 
-Nuevo flujo independiente para procesar contenido directamente desde el almacenamiento local, **sin necesidad de utilizar Google Drive**.
+Nuevo módulo orientado al procesamiento intensivo de contenido audiovisual:
 
-Permite:
+- 🎯 **Extracción por lotes:** procesamiento de colecciones completas en alta definición y sin marcas de agua, según las capacidades de la fuente y la conexión.
+- 🧵 **Pipeline concurrente:** tareas paralelas con gestión dinámica para aprovechar los recursos disponibles y reducir bloqueos.
+- 💾 **Indexación y caché inteligente:** detección de archivos ya procesados para evitar descargas repetidas y reducir el tráfico de red.
+- ⚙️ **Dependencias multimedia automatizadas:** detección y configuración de componentes necesarios en segundo plano, reduciendo los pasos manuales.
+- ⏱️ **Pases temporales:** opciones de acceso de 1 día, 3 días y 1 semana. La vigencia comienza cuando se utiliza la clave por primera vez.
 
-- 📂 Seleccionar directorios de entrada y salida.
-- 🎞️ Procesar colecciones de vídeo de forma recursiva.
-- 🎥 Trabajar con `.mp4`, `.mov`, `.mkv` y otros formatos compatibles.
-- 🏷️ Insertar marcas de agua únicas para trazabilidad.
-- 🧹 Depurar y optimizar metadatos.
-- 📱 Preparar contenido para TikTok, Reels y Shorts.
-- 🔄 Procesar grandes cantidades de archivos mediante un flujo automatizado.
+### ☁️ Licenciamiento Cloud y reactivación Zero-Prompt
+
+El sistema de licencias se integra con una infraestructura de servidores remotos para simplificar la activación y recuperación del acceso:
+
+- 🔑 **Activación inmediata:** claves con formato `DS-XXXX-XXXX`; la vinculación del equipo se realiza durante el primer inicio, según la licencia.
+- 🔄 **Reactivación Zero-Prompt:** diseñada para recuperar el acceso tras reinstalar Windows o formatear el equipo compatible, sin volver a introducir manualmente la clave cuando la validación del servidor permite reconocer la licencia.
+- 🛡️ **Validación criptográfica reforzada:** uso de firmas digitales para comprobar la autenticidad e integridad de las licencias.
+- 🤝 **Compatibilidad con licencias anteriores:** las claves emitidas en versiones previas siguen siendo compatibles con el sistema de validación de la nueva versión.
+- 🌐 **Gestión centralizada:** administración remota del estado de las claves para facilitar el control y el soporte.
+
+> La activación y la recuperación de licencias requieren conectividad con el servicio de licenciamiento cuando se realiza la validación.
+
+### 🛡️ Núcleo binario nativo optimizado
+
+Los componentes clave se distribuyen como binarios nativos precompilados:
+
+- ⚙️ **Componentes compilados:** partes del núcleo se distribuyen como librerías dinámicas nativas.
+- 📉 **Distribución más ligera:** el tamaño indicado para el instalador pasa de aproximadamente **23 MB a 4,4 MB** (reducción aproximada del **81 %**).
+- ⚡ **Uso eficiente de recursos:** optimizaciones orientadas a reducir la sobrecarga de ejecución y acelerar el arranque.
+
+### 🖥️ Nuevo lanzador nativo — `DRIVESYNC PRO.exe`
+
+- 💎 **Icono integrado:** identidad visual incorporada al ejecutable.
+- 🚀 **Ejecución directa:** lanzador optimizado para iniciar la aplicación con menos sobrecarga.
+- 🛡️ **Distribución mejorada:** estructura de ejecución adaptada a los componentes nativos de esta versión.
+
+### 🎨 Experiencia de usuario y control de terminal
+
+- ↩️ **Navegación rápida:** atajos `Esc` y `V` para regresar a menús anteriores en los contextos compatibles.
+- 🛑 **Cancelación controlada:** manejo de `Ctrl+C` para interrumpir operaciones procurando preservar bases de datos y archivos procesados.
+- 📌 **Estados más claros:** paneles con información de transferencias, rutas asignadas y tiempos estimados cuando están disponibles.
 
 ---
 
-### 📂 Procesamiento local
+## 🧰 Funciones que se mantienen
 
-DriveSync PRO ya no depende exclusivamente de contenido almacenado en Google Drive.
+### 🎬 Modo Anti-Duplicados y procesamiento local
 
-El procesamiento local permite trabajar directamente con archivos existentes en el equipo y resulta especialmente útil para:
+- 📂 Selección de directorios de entrada y salida.
+- 🎞️ Procesamiento recursivo de colecciones de vídeo.
+- 🏷️ Aplicación de marcas de agua para trazabilidad.
+- 🧹 Limpieza y optimización de metadatos.
+- 📱 Preparación de contenido para TikTok, Reels y Shorts.
+- ⚙️ Procesamiento automatizado por lotes y flujos locales.
 
-- 🎞️ Grandes colecciones de vídeos.
-- 📦 Procesamiento por lotes.
-- 📱 Preparación de contenido para redes sociales.
-- 🧹 Optimización de metadatos.
-- 🏷️ Aplicación de marcas de agua.
-- 📴 Flujos de trabajo offline.
-- ⚙️ Automatización de procesamiento multimedia.
+### ☁️ Integración con Google Drive
+
+DriveSync PRO mantiene sus herramientas para trabajar con contenido disponible a través de Google Drive y combinar operaciones de nube con procesamiento local.
+
+> ⚠️ **Google Drive para escritorio es obligatorio para las funciones de DriveSync PRO que trabajan con Google Drive.** El modo de procesamiento estrictamente local puede tener requisitos distintos según la operación utilizada.
+
+### ⚙️ Dependencias multimedia
+
+La aplicación automatiza la detección y configuración de las dependencias multimedia compatibles cuando corresponde, reduciendo la necesidad de instalación manual.
+
+### 🔄 Actualizaciones
+
+Consulta las versiones publicadas en GitHub Releases para obtener los archivos de distribución y las notas de cada versión.
 
 ---
 
-### 🔐 Seguridad avanzada — ECC V3
+## 📊 Comparativa v2026.1 vs v2026.2
 
-La versión `v2026.1` incorpora un nuevo sistema criptográfico basado en:
-
-- **ECDSA**
-- **NIST P-256**
-- **SHA-256**
-
-### Compatibilidad de licencias
-
-| Versión | Tecnología | Estado |
+| Característica | v2026.1 | v2026.2 |
 |---|---|---|
-| **ECC V3** | ECDSA / NIST P-256 + SHA-256 | ✅ Actual |
-| **RSA V2** | RSA 2048 bits | ✅ Legacy |
-| **Legacy V1** | RSA 512 bits | ✅ Legacy |
-
-El sistema mantiene compatibilidad con licencias existentes mediante una transición escalonada.
-
----
-
-### ⚙️ Instalación automática de FFmpeg
-
-La configuración de FFmpeg está automatizada.
-
-DriveSync PRO:
-
-1. 🔍 Comprueba si FFmpeg está disponible en el `PATH`.
-2. 📥 Si no está disponible, descarga automáticamente una build estática.
-3. 📦 Descomprime los binarios localmente.
-4. 🔗 Configura automáticamente el entorno de ejecución.
-5. ▶️ Continúa la ejecución sin requerir una instalación manual.
-
-Los binarios se almacenan dentro de:
-
-```text
-APP_DATA_DIR/bin
-```
-
-Esto permite utilizar las funciones de procesamiento multimedia sin obligar al usuario a instalar y configurar FFmpeg manualmente.
+| 🎬 Modo Anti-Duplicados local | ✅ | ✅ |
+| 📂 Procesamiento local | ✅ | ✅ |
+| ⚡ Motor de extracción masiva | — | ✅ Nuevo |
+| 🧵 Pipeline concurrente | — | ✅ Nuevo |
+| 💾 Indexación y caché para evitar repeticiones | — | ✅ Nuevo |
+| 🔑 Activación de licencias | Vinculación por hardware | Activación conectada a la nube |
+| ☁️ Vinculación del equipo | Flujo anterior | Automática durante el primer inicio compatible |
+| 🔄 Recuperación tras reinstalación | Requería reactivación manual según licencia | Zero-Prompt cuando la licencia puede reconocerse |
+| 🛡️ Validación criptográfica | ECC V3 y compatibilidad legacy | Validación reforzada y compatibilidad con claves previas |
+| 📦 Tamaño de distribución indicado | Aproximadamente 23 MB | Aproximadamente 4,4 MB |
+| ⚙️ Arquitectura | Núcleo de distribución anterior | Componentes binarios nativos optimizados |
+| 🖥️ Lanzador | Lanzador anterior | `DRIVESYNC PRO.exe` |
+| ⏱️ Pases temporales | — | 1 día, 3 días y 1 semana |
 
 ---
 
-### 📊 TUI Multifase
+## 🔑 Opciones de licencia
 
-La **Terminal User Interface (TUI)** ha sido mejorada para proporcionar información más precisa durante operaciones de larga duración.
+### 1. DriveSync PRO Lifetime — Acceso vitalicio
 
-Incluye diferentes fases de procesamiento:
+Acceso permanente a las funciones de DriveSync PRO incluidas en la licencia, con soporte y actualizaciones futuras conforme a las condiciones de la licencia adquirida.
 
-- 📥 Progreso de descarga de binarios.
-- ☁️ Descarga previa de vídeos temporales desde la nube.
-- 🎞️ Progreso del procesamiento multimedia.
-- ⏱️ Progreso de FFmpeg calculado según la duración real del archivo.
-- 📈 Métricas actualizadas en tiempo real.
-- 🔄 Estados independientes para cada fase.
+### 2. Pases de extracción masiva — Acceso temporal
 
-Esto permite identificar claramente qué está realizando DriveSync PRO durante cada etapa del proceso.
+- **Pase Diario:** 24 horas.
+- **Pase Pro:** 3 días.
+- **Pase Semanal:** 7 días.
 
----
-
-### 🔄 Comprobador de actualizaciones
-
-DriveSync PRO incorpora un sistema integrado de comprobación de actualizaciones basado en **GitHub Releases**.
-
-Desde el menú principal es posible:
-
-- 🔍 Comprobar si existe una nueva versión.
-- 📋 Consultar las notas de la versión.
-- 📦 Visualizar los assets disponibles.
-- ⬇️ Descargar directamente una nueva versión.
-- 🌐 Abrir la página de la release en el navegador.
-
-Las actualizaciones pueden gestionarse directamente desde la aplicación.
+El contador de vigencia comienza cuando se utiliza la clave por primera vez.
 
 ---
 
-### 🧱 Arquitectura desacoplada
+## 💻 Requisitos y compatibilidad
 
-El núcleo de DriveSync PRO ha sido reorganizado para separar la **lógica de negocio** de la **interfaz de usuario**.
+- 🪟 **Windows x64**.
+- 🌐 Conexión a Internet para activación, validación de licencias y funciones online.
+- 🔐 Una licencia válida de DriveSync PRO.
+- ☁️ **Google Drive para escritorio, obligatorio para las funciones relacionadas con Google Drive.**
 
-La comunicación de eventos se ha estandarizado mediante:
+### 💾 Instalar Google Drive para escritorio
 
-`ProgressReporter`
+Descarga e instala la versión oficial antes de utilizar las funciones de DriveSync PRO que dependen de Google Drive.
 
-Esta arquitectura permite que el motor funcione independientemente de la interfaz de terminal utilizada actualmente y facilita la incorporación de nuevas interfaces.
+[![Descargar Google Drive para escritorio](https://img.shields.io/badge/Google%20Drive%20para%20escritorio-Descargar-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe)
 
-La versión `v2026.1` incorpora además la estructura inicial:
-
-`gui/app.py`
-
-Esto prepara el proyecto para futuras interfaces gráficas nativas sin necesidad de reconstruir el núcleo de la aplicación.
-
----
-
-## ☁️ Google Drive
-
-DriveSync PRO mantiene sus capacidades orientadas a la gestión y procesamiento de contenido en **Google Drive**.
-
-La arquitectura permite combinar operaciones en la nube con procesamiento local, facilitando flujos de trabajo donde los archivos pueden ser descargados temporalmente, procesados y posteriormente utilizados dentro del flujo correspondiente.
-
----
-
-## 🔑 Activación y licencia
-
-> ⚠️ **DriveSync PRO requiere una licencia válida para funcionar.**
-
-El sistema utiliza una activación vinculada al equipo.
-
-Al iniciar la aplicación, DriveSync PRO detecta y muestra automáticamente el:
-
-```text
-Hardware ID (HWID)
-```
-
-Este identificador se utiliza para generar la clave de activación correspondiente.
-
-Las licencias pueden utilizar:
-
-- 🔐 ECC V3
-- 🔑 RSA V2
-- 🗝️ Legacy V1
-
-dependiendo de la versión de licencia emitida.
-
----
-
-## 🎁 Licencia vitalicia
-
-La licencia vitalicia de DriveSync PRO proporciona acceso indefinido a las funciones disponibles del software.
-
-Incluye:
-
-- ✅ Funciones completas de DriveSync PRO.
-- 🔄 Actualizaciones y parches de estabilidad.
-- 🛠️ Mejoras futuras del software.
-- 🔐 Sistema de activación vinculado al equipo.
-- 🧩 Compatibilidad con nuevas versiones publicadas.
-
----
-
-## 💻 Compatibilidad
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Windows-x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64">
-  <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.x">
-  <img src="https://img.shields.io/badge/FFmpeg-Automatic-007808?style=flat-square&logo=ffmpeg&logoColor=white" alt="FFmpeg">
-</p>
-
-La distribución oficial de `v2026.1` está preparada para:
-
-- 🪟 **Windows x64**
-- 🐍 **Python**
-- ☁️ **Google Drive para escritorio — obligatorio**
-- 🌐 Conexión a Internet.
-- 🔐 Una cuenta de Google Drive con acceso al contenido que deseas gestionar.
-
-### 💾 Google Drive para escritorio
-
-> ⚠️ **Google Drive para escritorio es un requisito obligatorio para utilizar las funciones de DriveSync PRO relacionadas con Google Drive.**
-
-Descarga e instala la versión oficial de Google Drive para escritorio antes de ejecutar DriveSync PRO:
-
-[![Google Drive](https://img.shields.io/badge/Google%20Drive%20para%20escritorio-Descargar-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe)
-
-**Descarga oficial:**
-
+**Enlace oficial directo:**  
 https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe
 
-DriveSync PRO utiliza las unidades y cuentas disponibles a través de Google Drive para escritorio para realizar las operaciones correspondientes.
-
-### 📦 Distribución
-
-DriveSync PRO se distribuye como un **paquete ZIP con sus componentes**.
-
-Esto permite mantener separados los componentes de la aplicación y facilita:
-
-- ⚙️ Un inicio más consistente.
-- 📦 Una distribución más estable.
-- 🧩 Separación de componentes.
-- 🛡️ Reducción de determinados falsos positivos de antivirus que pueden aparecer con ejecutables altamente empaquetados.
-
-> **Extrae completamente el ZIP antes de ejecutar el programa.**
-
 ---
 
-## 📥 Descargar
+## 📥 Descargar DriveSync PRO v2026.2
 
-### 🚀 DriveSync PRO v2026.1
+**Versión:** `v2026.2`
 
-**Versión estable actual**
+[![Descargar para Windows x64](https://img.shields.io/badge/Download-Windows%20x64-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.2)
 
-[![Download](https://img.shields.io/badge/Download-Windows%20x64-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/download/v2026.1/DriveSync-PRO-v2026.1-Windows-x64.zip)
+[📦 Ver archivos y notas de la release v2026.2](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.2)
 
-**Archivo:**
-
-```text
-DriveSync-PRO-v2026.1-Windows-x64.zip
-```
-
-[📦 Ver release v2026.1](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.1)
+> El nombre exacto del archivo descargable puede variar según los assets publicados en la página de la release.
 
 ---
 
 ## 📦 Instalación
 
-1. 📥 Descarga `DriveSync-PRO-v2026.1-Windows-x64.zip`.
-2. 📂 Extrae **todo** su contenido en una carpeta.
-3. ▶️ Ejecuta la aplicación.
-4. 🔐 Completa el proceso de activación si es necesario.
-5. ⚙️ Si FFmpeg no está disponible, DriveSync PRO gestionará automáticamente su instalación.
-6. 🚀 Utiliza la aplicación.
+1. 📥 Abre la [release v2026.2](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.2) y descarga el paquete para Windows x64.
+2. 📂 Si la descarga es un ZIP, extrae **todo** su contenido en una carpeta.
+3. ☁️ Instala Google Drive para escritorio si vas a utilizar las funciones relacionadas con Google Drive.
+4. ▶️ Ejecuta `DRIVESYNC PRO.exe` desde la carpeta extraída.
+5. 🔐 Activa la aplicación con una licencia válida si se solicita.
+6. 🌐 Mantén conexión a Internet durante las operaciones que requieran validación cloud.
 
-> ⚠️ **No ejecutes el programa directamente desde el interior del ZIP.**
-
----
-
-## 🧩 Flujo general
-
-```text
-┌───────────────────────────────┐
-│       🚀 DriveSync PRO        │
-└───────────────┬───────────────┘
-                │
-       ┌────────▼────────┐
-       │ Detectar entorno│
-       └────────┬────────┘
-                │
-       ┌────────▼────────┐
-       │ Configurar      │
-       │ dependencias    │
-       └────────┬────────┘
-                │
-       ┌────────▼────────┐
-       │ Seleccionar     │
-       │ origen/destino  │
-       └────────┬────────┘
-                │
-       ┌────────▼────────┐
-       │ Procesar        │
-       │ contenido       │
-       └────────┬────────┘
-                │
-       ┌────────▼────────┐
-       │ 📊 TUI /        │
-       │ ProgressReporter│
-       └─────────────────┘
-```
-
----
-
-## 📋 Resumen de v2026.1
-
-| Componente | Estado |
-|---|---|
-| 🎬 Modo Anti-Duplicados | ✅ |
-| 📂 Procesamiento local | ✅ |
-| 🎞️ Procesamiento recursivo de vídeo | ✅ |
-| 🏷️ Marcas de agua de trazabilidad | ✅ |
-| 🧹 Optimización de metadatos | ✅ |
-| 🔐 ECC V3 / NIST P-256 | ✅ |
-| 🔑 RSA V2 / Legacy V1 | ✅ |
-| ⚙️ Instalación automática de FFmpeg | ✅ |
-| 📊 TUI multifase | ✅ |
-| 📈 Métricas en tiempo real | ✅ |
-| 🔄 Comprobador de actualizaciones | ✅ |
-| 🧱 `ProgressReporter` | ✅ |
-| 🖥️ Arquitectura preparada para GUI | ✅ |
-| 📅 Versionado `vYYYY.Release` | ✅ |
+> ⚠️ No ejecutes la aplicación directamente desde el interior de un archivo ZIP. Descarga siempre los archivos desde la página oficial de la release.
 
 ---
 
 ## 📝 Changelog
 
-### v2026.1 — Nueva arquitectura
+### v2026.2 — Motor concurrente y arquitectura cloud
 
 #### ✨ Añadido
-
-- 🎬 Modo Anti-Duplicados para carpetas locales.
-- 📂 Procesamiento local de vídeos.
-- 🎞️ Procesamiento recursivo.
-- 🏷️ Marcas de agua de trazabilidad.
-- 🧹 Optimización y limpieza de metadatos.
-- 🔐 ECC V3 basado en ECDSA NIST P-256 + SHA-256.
-- 🔑 Compatibilidad con RSA V2 y Legacy V1.
-- ⚙️ Instalación automática de FFmpeg.
-- 📊 TUI multifase.
-- 📈 Métricas de procesamiento en tiempo real.
-- 🔄 Comprobador de actualizaciones mediante GitHub Releases.
-- 🧱 Sistema `ProgressReporter`.
-- 🖥️ Estructura inicial para futura GUI.
-- 📅 Nuevo esquema de versionado `vYYYY.Release`.
+- ⚡ Motor de extracción y procesamiento masivo.
+- 🧵 Pipeline de tareas concurrentes.
+- 💾 Indexación y caché inteligente para reducir el reprocesamiento.
+- ⏱️ Pases temporales de 1 día, 3 días y 1 semana.
+- ☁️ Administración de licencias conectada a infraestructura cloud.
+- 🔄 Sistema de reactivación Zero-Prompt para licencias compatibles.
+- 🖥️ Nuevo lanzador nativo `DRIVESYNC PRO.exe`.
+- ⚙️ Componentes binarios nativos precompilados.
 
 #### 🚀 Mejorado
+- 📉 Tamaño de distribución indicado de aproximadamente 23 MB a 4,4 MB.
+- ⚡ Optimización del arranque y de la ejecución del núcleo.
+- 🎨 Navegación, estados de transferencia y control de interrupciones.
+- 🛡️ Validación de licencias y compatibilidad con claves anteriores.
 
-- 🏗️ Arquitectura interna.
-- 🔌 Separación entre núcleo e interfaz.
-- 📦 Gestión de dependencias multimedia.
-- 📊 Visualización del progreso.
-- 🎞️ Flujo de procesamiento de vídeo.
-- 🔄 Gestión de actualizaciones.
-
-#### 🔐 Seguridad
-
-- ECC V3 establecido como sistema criptográfico actual.
-- Compatibilidad mantenida con sistemas de licencias anteriores.
+### v2026.1 — Nueva arquitectura
+- 🎬 Modo Anti-Duplicados para carpetas locales.
+- 📂 Procesamiento local y recursivo de vídeos.
+- 🏷️ Marcas de agua de trazabilidad y optimización de metadatos.
+- 🔐 ECC V3 basado en ECDSA NIST P-256 + SHA-256, con compatibilidad con RSA V2 y Legacy V1.
+- ⚙️ Gestión automatizada de dependencias multimedia.
+- 📊 TUI multifase y métricas de procesamiento.
+- 🔄 Comprobador de actualizaciones basado en GitHub Releases.
+- 🧱 Arquitectura desacoplada mediante `ProgressReporter`.
 
 ---
 
 ## 🔍 Comparación de versiones
 
-Consulta los cambios realizados desde **v4.3.1**:
-
-[![Compare](https://img.shields.io/badge/Compare-v4.3.1%20→%20v2026.1-6f42c1?style=for-the-badge&logo=github)](https://github.com/JeanDev-rgb/DriveSync-PRO/compare/4.3.1...v2026.1)
+[![Comparar v2026.1 con v2026.2](https://img.shields.io/badge/Compare-v2026.1%20%E2%86%92%20v2026.2-6f42c1?style=for-the-badge&logo=github)](https://github.com/JeanDev-rgb/DriveSync-PRO/compare/v2026.1...v2026.2)
 
 ---
 
 ## 📩 Soporte y contacto
 
-Para información sobre licencias, activación o soporte, puedes contactar directamente con el desarrollador.
-
 ### 🌐 ForoBeta
-
-**JeanDev**
-
-[Visitar perfil de JeanDev](https://forobeta.com/members/jeandev.362650/)
+**JeanDev** · [Visitar perfil](https://forobeta.com/members/jeandev.362650/)
 
 ### 💬 WhatsApp
-
 [Contactar por WhatsApp (+51 925030997)](https://wa.me/51925030997)
 
 ---
 
 ## 📜 Licencia
 
-DriveSync PRO utiliza un sistema de **licenciamiento comercial**.
-
-El software requiere una licencia válida para su utilización.
-
-Consulta las condiciones de licencia correspondientes antes de distribuir, modificar o utilizar el software.
-
----
-
-## 🚀 DriveSync PRO v2026.1
-
-> **Una nueva generación de DriveSync PRO.**
-
-**Más automatización.**
-
-**Más seguridad.**
-
-**Más control.**
-
-**Una arquitectura preparada para el futuro.**
+DriveSync PRO utiliza un sistema de **licenciamiento comercial**. Se requiere una licencia válida para utilizar las funciones protegidas. Consulta las condiciones de la licencia antes de distribuir, modificar o utilizar el software.
 
 ---
 
 <p align="center">
-  <strong>© DriveSync PRO — v2026.1</strong><br>
+  <strong>© DriveSync PRO — v2026.2</strong><br>
   <sub>Desarrollado por JeanDev · Streamify+</sub>
 </p>

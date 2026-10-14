@@ -1,9 +1,9 @@
-# 🚀 DriveSync PRO v2026.3
+# 🚀 DriveSync PRO v2026.2.1
 
 > **Motor de Extracción Concurrente · Arquitectura Cloud Distribuida · Núcleo Binario Optimizado · Lanzador Nativo**
 
 <p align="center">
-  <a href="https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.3">
+  <a href="https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.2.1">
     <img src="https://img.shields.io/github/v/release/JeanDev-rgb/DriveSync-PRO?display_name=tag&style=for-the-badge&logo=github&label=Release" alt="Latest Release">
   </a>
   <img src="https://img.shields.io/badge/Windows-x64-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64">
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <strong>DriveSync PRO v2026.3</strong><br>
+  <strong>DriveSync PRO v2026.2.1</strong><br>
   Extracción masiva · Licencias Cloud · Reactivación Zero-Prompt · Núcleo nativo · Lanzador optimizado
 </p>
 
@@ -74,7 +74,7 @@ Los componentes clave se distribuyen como binarios nativos precompilados:
 
 ---
 
-## 🆕 Novedades de v2026.3 — Correcciones de licencias y cuotas
+## 🆕 Novedades de v2026.2.1 — Correcciones de licencias y cuotas
 
 Esta actualización consolida correcciones del sistema de licenciamiento y sincronización de cuotas.
 
@@ -116,9 +116,9 @@ Consulta las versiones publicadas en GitHub Releases para obtener los archivos d
 
 ---
 
-## 📊 Comparativa v2026.1 vs v2026.3
+## 📊 Comparativa v2026.1 vs v2026.2.1
 
-| Característica | v2026.1 | v2026.3 |
+| Característica | v2026.1 | v2026.2.1 |
 |---|---|---|
 | 🎬 Modo Anti-Duplicados local | ✅ | ✅ |
 | 📂 Procesamiento local | ✅ | ✅ |
@@ -170,13 +170,13 @@ https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe
 
 ---
 
-## 📥 Descargar DriveSync PRO v2026.3
+## 📥 Descargar DriveSync PRO v2026.2.1
 
-**Versión:** `v2026.3`
+**Versión:** `v2026.2.1`
 
-[![Descargar para Windows x64](https://img.shields.io/badge/Download-Windows%20x64-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.3)
+[![Descargar para Windows x64](https://img.shields.io/badge/Download-Windows%20x64-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.2.1)
 
-[📦 Ver archivos y notas de la release v2026.2](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.3)
+[📦 Ver archivos y notas de la release v2026.2](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.2.1)
 
 > El nombre exacto del archivo descargable puede variar según los assets publicados en la página de la release.
 
@@ -184,7 +184,7 @@ https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe
 
 ## 📦 Instalación
 
-1. 📥 Abre la [release v2026.2](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.3) y descarga el paquete para Windows x64.
+1. 📥 Abre la [release v2026.2](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.2.1) y descarga el paquete para Windows x64.
 2. 📂 Si la descarga es un ZIP, extrae **todo** su contenido en una carpeta.
 3. ☁️ Instala Google Drive para escritorio si vas a utilizar las funciones relacionadas con Google Drive.
 4. ▶️ Ejecuta `DRIVESYNC PRO.exe` desde la carpeta extraída.

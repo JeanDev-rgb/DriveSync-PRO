@@ -1,9 +1,9 @@
-# 🚀 DriveSync PRO v2026.2.1
+# 🚀 DriveSync PRO v2026.2.2
 
 > **Motor de Extracción Concurrente · Arquitectura Cloud Distribuida · Núcleo Binario Optimizado · Lanzador Nativo**
 
 <p align="center">
-  <a href="https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.2.1">
+  <a href="https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.2.2">
     <img src="https://img.shields.io/github/v/release/JeanDev-rgb/DriveSync-PRO?display_name=tag&style=for-the-badge&logo=github&label=Release" alt="Latest Release">
   </a>
   <img src="https://img.shields.io/badge/Windows-x64-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64">
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <strong>DriveSync PRO v2026.2.1</strong><br>
+  <strong>DriveSync PRO v2026.2.2</strong><br>
   Extracción masiva · Licencias Cloud · Reactivación Zero-Prompt · Núcleo nativo · Lanzador optimizado
 </p>
 
@@ -74,15 +74,20 @@ Los componentes clave se distribuyen como binarios nativos precompilados:
 
 ---
 
-## 🆕 Novedades de v2026.2.1 — Correcciones de licencias y cuotas
+## 🆕 Novedades de v2026.2.2 — TikTok, licencias y sincronización de cuotas
 
-Esta actualización consolida correcciones del sistema de licenciamiento y sincronización de cuotas.
+Esta actualización mejora la extracción de perfiles de TikTok y consolida correcciones del sistema de licenciamiento, cuotas y telemetría de tareas.
 
+- 🎵 **Extracción de perfiles de TikTok:** mejora la obtención de URLs de vídeos desde perfiles y el manejo de perfiles restringidos.
+- 🍪 **Gestión de cookies:** mejora la detección y el uso de perfiles de cookies compatibles de distintos navegadores.
+- 📊 **Progreso y métricas:** amplía los eventos de progreso con información más detallada y optimiza la gestión de workers.
+- 🧾 **Logging por hilo:** mejora el registro de operaciones concurrentes y la trazabilidad de errores.
 - 🔐 **Normalización de HWID:** estandariza la representación del identificador del dispositivo para reducir inconsistencias al registrar o comparar equipos.
 - 🗃️ **Registro maestro de dispositivos:** centraliza la referencia del HWID y permite que los registros relacionados utilicen una fuente común.
 - 🧾 **Migración y preservación histórica:** incorpora ajustes para mantener los datos existentes durante la reconsolidación y migración de registros, evitando perder el historial ya registrado.
 - ☁️ **Sincronización con Cloudflare:** los incrementos de cuotas sincronizan los cambios inmediatamente con el servicio remoto.
 - 🧹 **Lógica de cuotas simplificada:** elimina lógica de reembolso que ya no se utiliza y reduce rutas redundantes de actualización.
+- 🧭 **Manejo de errores:** mejora los mensajes de diagnóstico para los casos de extracción de perfiles y restricciones de TikTok.
 - 🛠️ **Mantenimiento del repositorio:** actualiza reglas de exclusión para evitar incluir archivos que no deben formar parte del control de versiones.
 
 > Estas notas describen los cambios registrados en el repositorio de desarrollo. El comportamiento final depende de la versión empaquetada en el ZIP de la release.
@@ -116,9 +121,9 @@ Consulta las versiones publicadas en GitHub Releases para obtener los archivos d
 
 ---
 
-## 📊 Comparativa v2026.1 vs v2026.2.1
+## 📊 Comparativa v2026.1 vs v2026.2.2
 
-| Característica | v2026.1 | v2026.2.1 |
+| Característica | v2026.1 | v2026.2.2 |
 |---|---|---|
 | 🎬 Modo Anti-Duplicados local | ✅ | ✅ |
 | 📂 Procesamiento local | ✅ | ✅ |
@@ -170,13 +175,13 @@ https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe
 
 ---
 
-## 📥 Descargar DriveSync PRO v2026.2.1
+## 📥 Descargar DriveSync PRO v2026.2.2
 
-**Versión:** `v2026.2.1`
+**Versión:** `v2026.2.2`
 
-[![Descargar para Windows x64](https://img.shields.io/badge/Download-Windows%20x64-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.2.1)
+[![Descargar para Windows x64](https://img.shields.io/badge/Download-Windows%20x64-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.2.2)
 
-[📦 Ver archivos y notas de la release v2026.2](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.2.1)
+[📦 Ver archivos y notas de la release v2026.2](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.2.2)
 
 > El nombre exacto del archivo descargable puede variar según los assets publicados en la página de la release.
 
@@ -184,7 +189,7 @@ https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe
 
 ## 📦 Instalación
 
-1. 📥 Abre la [release v2026.2](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.2.1) y descarga el paquete para Windows x64.
+1. 📥 Abre la [release v2026.2](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.2.2) y descarga el paquete para Windows x64.
 2. 📂 Si la descarga es un ZIP, extrae **todo** su contenido en una carpeta.
 3. ☁️ Instala Google Drive para escritorio si vas a utilizar las funciones relacionadas con Google Drive.
 4. ▶️ Ejecuta `DRIVESYNC PRO.exe` desde la carpeta extraída.
@@ -196,6 +201,14 @@ https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe
 ---
 
 ## 📝 Changelog
+
+### v2026.2.2 — Mejoras de extracción y correcciones
+- 🎵 Mejoras en la extracción de perfiles de TikTok y recuperación de URLs de vídeos.
+- 🍪 Manejo mejorado de cookies y perfiles de navegador compatibles.
+- 📊 Eventos de progreso más detallados y gestión optimizada de workers.
+- 🧾 Logging específico por hilo y diagnósticos de errores más claros.
+- 🔐 Normalización de HWID y migración de dispositivos con preservación del historial.
+- ☁️ Sincronización inmediata de incrementos de cuotas con Cloudflare.
 
 ### v2026.2 — Motor concurrente y arquitectura cloud
 

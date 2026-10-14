@@ -1,9 +1,9 @@
-# 🚀 DriveSync PRO v2026.2
+# 🚀 DriveSync PRO v2026.3
 
 > **Motor de Extracción Concurrente · Arquitectura Cloud Distribuida · Núcleo Binario Optimizado · Lanzador Nativo**
 
 <p align="center">
-  <a href="https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.2">
+  <a href="https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.3">
     <img src="https://img.shields.io/github/v/release/JeanDev-rgb/DriveSync-PRO?display_name=tag&style=for-the-badge&logo=github&label=Release" alt="Latest Release">
   </a>
   <img src="https://img.shields.io/badge/Windows-x64-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64">
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <strong>DriveSync PRO v2026.2</strong><br>
+  <strong>DriveSync PRO v2026.3</strong><br>
   Extracción masiva · Licencias Cloud · Reactivación Zero-Prompt · Núcleo nativo · Lanzador optimizado
 </p>
 
@@ -74,6 +74,21 @@ Los componentes clave se distribuyen como binarios nativos precompilados:
 
 ---
 
+## 🆕 Novedades de v2026.3 — Correcciones de licencias y cuotas
+
+Esta actualización consolida correcciones del sistema de licenciamiento y sincronización de cuotas.
+
+- 🔐 **Normalización de HWID:** estandariza la representación del identificador del dispositivo para reducir inconsistencias al registrar o comparar equipos.
+- 🗃️ **Registro maestro de dispositivos:** centraliza la referencia del HWID y permite que los registros relacionados utilicen una fuente común.
+- 🧾 **Migración y preservación histórica:** incorpora ajustes para mantener los datos existentes durante la reconsolidación y migración de registros, evitando perder el historial ya registrado.
+- ☁️ **Sincronización con Cloudflare:** los incrementos de cuotas sincronizan los cambios inmediatamente con el servicio remoto.
+- 🧹 **Lógica de cuotas simplificada:** elimina lógica de reembolso que ya no se utiliza y reduce rutas redundantes de actualización.
+- 🛠️ **Mantenimiento del repositorio:** actualiza reglas de exclusión para evitar incluir archivos que no deben formar parte del control de versiones.
+
+> Estas notas describen los cambios registrados en el repositorio de desarrollo. El comportamiento final depende de la versión empaquetada en el ZIP de la release.
+
+---
+
 ## 🧰 Funciones que se mantienen
 
 ### 🎬 Modo Anti-Duplicados y procesamiento local
@@ -101,9 +116,9 @@ Consulta las versiones publicadas en GitHub Releases para obtener los archivos d
 
 ---
 
-## 📊 Comparativa v2026.1 vs v2026.2
+## 📊 Comparativa v2026.1 vs v2026.3
 
-| Característica | v2026.1 | v2026.2 |
+| Característica | v2026.1 | v2026.3 |
 |---|---|---|
 | 🎬 Modo Anti-Duplicados local | ✅ | ✅ |
 | 📂 Procesamiento local | ✅ | ✅ |
@@ -155,13 +170,13 @@ https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe
 
 ---
 
-## 📥 Descargar DriveSync PRO v2026.2
+## 📥 Descargar DriveSync PRO v2026.3
 
-**Versión:** `v2026.2`
+**Versión:** `v2026.3`
 
-[![Descargar para Windows x64](https://img.shields.io/badge/Download-Windows%20x64-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.2)
+[![Descargar para Windows x64](https://img.shields.io/badge/Download-Windows%20x64-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.3)
 
-[📦 Ver archivos y notas de la release v2026.2](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.2)
+[📦 Ver archivos y notas de la release v2026.2](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.3)
 
 > El nombre exacto del archivo descargable puede variar según los assets publicados en la página de la release.
 
@@ -169,7 +184,7 @@ https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe
 
 ## 📦 Instalación
 
-1. 📥 Abre la [release v2026.2](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.2) y descarga el paquete para Windows x64.
+1. 📥 Abre la [release v2026.2](https://github.com/JeanDev-rgb/DriveSync-PRO/releases/tag/v2026.3) y descarga el paquete para Windows x64.
 2. 📂 Si la descarga es un ZIP, extrae **todo** su contenido en una carpeta.
 3. ☁️ Instala Google Drive para escritorio si vas a utilizar las funciones relacionadas con Google Drive.
 4. ▶️ Ejecuta `DRIVESYNC PRO.exe` desde la carpeta extraída.

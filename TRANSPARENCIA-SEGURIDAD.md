@@ -112,11 +112,27 @@ Los rangos permiten que pip resuelva versiones compatibles disponibles al instal
 
 La preparación del runtime y los descargadores revisados no fijan ni comparan un SHA-256 esperado para el archivo de CPython, `get-pip.py` o el ZIP de FFmpeg. No debe afirmarse que esos archivos tienen verificación criptográfica de hash si no se incorpora y publica esa comprobación.
 
-## 5. Procesamiento local y archivos
+## 5. Procesamiento local y almacenamiento de datos
 
-El procesamiento multimedia se realiza mediante componentes locales y dependencias ejecutadas en el equipo. En los módulos de validación de licencias y sincronización de cuotas revisados, los datos enviados son los campos descritos en la sección 3; no se observó que esos payloads adjunten archivos personales.
+El procesamiento multimedia se realiza mediante componentes locales y dependencias ejecutadas en el equipo. Además de las comunicaciones online descritas en las secciones anteriores, DriveSync PRO conserva datos localmente para mantener el estado de las tareas, las cuotas y las funciones de TikTok.
 
-Esto no equivale a afirmar que ningún dato sale nunca del equipo: la extracción de TikTok realiza solicitudes a TikTok y las funciones de Google Drive utilizan el servicio/cliente correspondiente.
+La carpeta de datos de la aplicación se construye a partir de `%APPDATA%\DriveSyncPro`. En Windows, las ubicaciones identificadas en el código revisado incluyen:
+
+| Ruta | Contenido identificado |
+|---|---|
+| `%APPDATA%\DriveSyncPro\sync_cache.db` | Base de datos SQLite de persistencia. Incluye planes y sesiones de sincronización, inventarios y metadatos de fuentes, rutas, estados de archivos, caché de carpetas y registros de copias de vídeo. Algunas tablas almacenan rutas de origen/destino, identificadores de destinatarios y hashes SHA-256. |
+| `%APPDATA%\DriveSyncPro\quota.json` | Fecha y contadores locales de uso: bytes transferidos, operaciones TikTok y operaciones FFmpeg. |
+| `%APPDATA%\DriveSyncPro\tiktok\license.json` | Caché de la suscripción TikTok: clave TK, nivel/plan, vencimiento y fecha de última comprobación. Se escribe como JSON local; el código revisado no cifra explícitamente este archivo. |
+| `%APPDATA%\DriveSyncPro\tiktok\profiles\` | Cachés de perfiles TikTok, con metadatos y entradas de publicaciones (por ejemplo, identificadores, URLs y datos asociados devueltos por el extractor). |
+| `%APPDATA%\DriveSyncPro\tiktok\archives\` | Historiales locales de publicaciones descargadas y publicaciones omitidas por perfil. |
+| `%APPDATA%\DriveSyncPro\bin\yt-dlp.exe` | Ejecutable de yt-dlp descargado/administrado por la aplicación. |
+| `%APPDATA%\DriveSyncPro\bin\ffmpeg.exe` | Ejecutable de FFmpeg descargado/administrado por la aplicación en Windows. |
+
+**Implicaciones de privacidad:** la base de datos puede contener nombres de carpetas, rutas locales y metadatos vinculados a las operaciones del usuario. La caché TikTok conserva información de perfiles y publicaciones. La clave de suscripción TikTok se guarda en el archivo JSON indicado, por lo que un usuario con acceso a su perfil de Windows podría acceder a ese archivo. No se afirma que esos datos estén cifrados en reposo.
+
+Los archivos locales anteriores no deben confundirse con los datos enviados a la API. En los módulos de licencias y cuotas revisados, los payloads remotos contienen los campos descritos en la sección 3; no se observó que adjunten la base de datos SQLite, los archivos de caché, los inventarios ni los vídeos.
+
+Esto no equivale a afirmar que ningún dato sale nunca del equipo: la extracción de TikTok realiza solicitudes a TikTok (y puede usar cookies de navegador según la sección 1), mientras que las funciones de Google Drive utilizan el servicio/cliente correspondiente.
 
 ## 6. Distribución ligera y alcance de esta revisión
 
@@ -124,7 +140,27 @@ La release pública ofrece un ZIP ligero. El runtime Python y algunas dependenci
 
 La revisión documental se realizó sobre los archivos disponibles en la rama `master` del repositorio de código fuente y la documentación pública de la release v2026.2.2. Mientras no se publique un identificador de commit y un manifiesto que vinculen la compilación con el ZIP distribuido, no se debe presentar esta revisión estática como prueba de que el ejecutable publicado es reproducible o idéntico a ese código fuente.
 
-## 7. Resumen para compradores
+## 7. Análisis antivirus de VirusTotal
+
+Se incluyen los siguientes reportes para que el usuario pueda consultar los archivos concretos y sus resultados directamente en VirusTotal. Los SHA-256 identifican los archivos analizados; no deben interpretarse como una certificación de seguridad.
+
+| Archivo analizado | SHA-256 | Reporte |
+|---|---|---|
+| ZIP de la release oficial v2026.2.2, descargado desde GitHub | `0ef18f9f1a482bd88daa052bb434c00b4b1264a55aaa37cc0fd69e9a3ae7584f` | [Ver análisis en VirusTotal](https://www.virustotal.com/gui/file/0ef18f9f1a482bd88daa052bb434c00b4b1264a55aaa37cc0fd69e9a3ae7584f/details) |
+| ZIP del runtime de Python y dependencias | `c24133766fc93125f1eb6bf49456f8a12b1e0dc943d5d355c862497756e70787` | [Ver análisis en VirusTotal](https://www.virustotal.com/gui/file/c24133766fc93125f1eb6bf49456f8a12b1e0dc943d5d355c862497756e70787) |
+| ZIP con los ejecutables de la carpeta `bin` (yt-dlp y FFmpeg) | `fe52688f396cb02f16a0e389f92430569706358a20ff48dc753b615323c2b11d` | [Ver análisis en VirusTotal](https://www.virustotal.com/gui/file/fe52688f396cb02f16a0e389f92430569706358a20ff48dc753b615323c2b11d) |
+
+Los resultados comunicados al preparar esta documentación fueron 1/66 detecciones para el ZIP de la release, 0/56 para el ZIP del runtime y 0/66 para el ZIP de `bin`. Estos recuentos son una referencia del momento del análisis y pueden cambiar cuando los motores actualicen sus firmas. El reporte de la release contiene una detección heurística; no se clasifica aquí como falso positivo confirmado, ya que esa conclusión requiere análisis adicional del archivo y del motor que lo detectó.
+
+**Limitaciones importantes:**
+
+- Un resultado de 0 detecciones no demuestra que un archivo sea completamente seguro.
+- Un resultado con una detección no demuestra por sí solo que el archivo sea malicioso.
+- El análisis del ZIP inicial no cubre automáticamente los componentes descargados después desde Python.org, PyPI, GitHub o gyan.dev.
+- Los reportes corresponden exactamente a los hashes indicados. Si el archivo cambia, debe analizarse su nuevo SHA-256.
+- No se recomienda subir a servicios públicos de análisis archivos personales como `sync_cache.db`, archivos de licencia o cachés de usuario. Los reportes de esta sección corresponden a paquetes de distribución/runtime y componentes ejecutables, no a datos privados del usuario.
+
+## 8. Resumen para compradores
 
 - DriveSync PRO puede utilizar cookies de Chrome, Edge, Brave, Vivaldi, Opera o Firefox para autenticarse ante TikTok durante la extracción de perfiles.
 - Las cookies son manejadas por yt-dlp para solicitudes a TikTok; no se encontró que los módulos de licencias o cuotas las envíen a la API de DriveSync PRO.
@@ -133,7 +169,7 @@ La revisión documental se realizó sobre los archivos disponibles en la rama `m
 - El procesamiento multimedia se realiza localmente, pero las funciones online se comunican con sus respectivos servicios.
 - Esta página documenta el código fuente revisado y no sustituye una auditoría independiente del binario de la release.
 
-## Archivos de referencia revisados
+## 9. Archivos de referencia revisados
 
 Repositorio de código fuente: [JeanDev09/DRIVESYNC-PRO](https://github.com/JeanDev09/DRIVESYNC-PRO)
 

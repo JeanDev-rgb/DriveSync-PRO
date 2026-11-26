@@ -42,6 +42,7 @@ DriveSync PRO realiza conexiones a servicios externos para las funciones que dep
 | `bootstrap.pypa.io` | Descarga de `get-pip.py` para instalar pip en el runtime. |
 | PyPI | Instalación de los paquetes declarados en `requirements.txt`. |
 | `www.gyan.dev` | Descarga del paquete ZIP de FFmpeg para Windows cuando se necesita y no hay una instalación utilizable. |
+| `www.google.com` y `www.cloudflare.com` | Solicitudes HTTP HEAD para obtener la cabecera de fecha y calcular el día de las cuotas; Google también se usa en una comprobación de resolución/conectividad DNS. |
 
 La tabla recoge los destinos identificados en los módulos revisados; no debe interpretarse como una lista exhaustiva de todo el tráfico que puedan generar Windows, Google Drive para escritorio, bibliotecas de terceros u otros componentes del equipo.
 

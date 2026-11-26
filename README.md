@@ -76,7 +76,7 @@ Los componentes clave se distribuyen como binarios nativos precompilados:
 
 ## 🆕 Novedades de v2026.2.2 — TikTok, licencias y sincronización de cuotas
 
-Esta actualización mejora la extracción de perfiles de TikTok y consolida correcciones del sistema de licenciamiento, cuotas y telemetría de tareas.
+Esta actualización mejora la extracción de perfiles de TikTok y consolida correcciones del sistema de licenciamiento, cuotas y métricas de progreso.
 
 - 🎵 **Extracción de perfiles de TikTok:** mejora la obtención de URLs de vídeos desde perfiles y el manejo de perfiles restringidos.
 - 🍪 **Gestión de cookies:** mejora la detección y el uso de perfiles de cookies compatibles de distintos navegadores.
@@ -172,6 +172,18 @@ Descarga e instala la versión oficial antes de utilizar las funciones de DriveS
 
 **Enlace oficial directo:**  
 https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe
+
+---
+
+## 🛡️ Transparencia técnica, privacidad y seguridad
+
+DriveSync PRO utiliza cookies de navegador en determinados flujos de extracción de perfiles de TikTok cuando detecta perfiles compatibles. También sincroniza con su servicio remoto los datos necesarios para validar licencias y mantener las cuotas de uso.
+
+Para conocer qué perfiles de navegador pueden detectarse, qué datos se envían, qué servicios externos intervienen y cómo se prepara el runtime de la distribución ligera, consulta la documentación:
+
+[📄 Leer la declaración técnica de transparencia, privacidad y seguridad](TRANSPARENCIA-SEGURIDAD.md)
+
+> La documentación describe el código fuente revisado. No debe interpretarse como una auditoría independiente del ejecutable ni como una verificación de correspondencia binaria mientras no se publique un manifiesto de compilación.
 
 ---
 
